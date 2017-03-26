@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-group">
+                <%
+                movies.forEach(function(movie){ %>
+                <li class="list-group-item">
+                    <a href="<%=movie.url%>"><%=movie.name%></a>
+                </li>
+
+
+
+
+                <% })
+
+                %>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
